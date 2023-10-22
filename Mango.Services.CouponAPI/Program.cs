@@ -31,7 +31,7 @@ app.MapControllers();
 ApplyMigration();
 app.Run();
 
-
+// apply pending migrations 
 void ApplyMigration()
 {
     using(var scope = app.Services.CreateScope())
